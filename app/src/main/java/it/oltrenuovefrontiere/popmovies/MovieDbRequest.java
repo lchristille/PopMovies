@@ -62,7 +62,7 @@ public class MovieDbRequest {
         try {
             response = jsonResponseAdapter.fromJson(_i);
         } catch (IOException e) {
-            response = new JsonResponse(0, new Movie("Not found"));
+            response = new JsonResponse(0, new Movie("It is impossible to connect to internet. Try again later"));
         }
         return response.results;
     }
