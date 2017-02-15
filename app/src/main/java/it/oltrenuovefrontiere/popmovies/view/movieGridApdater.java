@@ -23,6 +23,9 @@ public class movieGridApdater extends RecyclerView.Adapter<movieGridApdater.View
 
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
+        Movie currentMovie = mMovieList.get(position);
+        holder.mTvTitle.setText(currentMovie.title);
+        holder.mTvPoster.setText(currentMovie.poster_path);
 
     }
 
