@@ -19,8 +19,6 @@ import it.oltrenuovefrontiere.popmovies.model.Movie;
  * Created by NewArt on 15/02/2017.
  */
 
-// https://www.raywenderlich.com/126528/android-recyclerview-tutorial
-
 public class movieGridApdater extends RecyclerView.Adapter<movieGridApdater.ViewHolder> {
 
     private List<Movie> mMovieList;
